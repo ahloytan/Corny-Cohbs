@@ -4,6 +4,11 @@
   <PageDescription />
   <CornPaper />
   <PageContact />
+  <button id="to-top-button" @click="goToTop()" title="Back To Top" class="hidden fixed z-90 bottom-8 right-8 border-0 w-12 h-12 rounded-full drop-shadow-md bg-indigo-500 text-white ">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  </button>
 </template>
 
 <script>
@@ -21,6 +26,21 @@ export default {
     PageDescription,
     CornPaper,
     PageContact,
+  },
+  mounted(){
+    var toTopButton = document.getElementById("to-top-button");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            toTopButton.classList.remove("hidden");
+        } else {
+            toTopButton.classList.add("hidden");
+        }
+    }
+  },
+  methods: {
+    goToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 }
 </script>
@@ -42,7 +62,7 @@ export default {
 }
 
 .max-width-350 {
-  max-width: 100%;
+  max-width: 350px;
 }
 
 .degular {
@@ -89,16 +109,15 @@ export default {
   background-color: #FFFED5;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   #cornsGIF {
     width: 234px;
     height: 234px;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .max-width-350 {
-    max-width: 350px;
+  .icons {
+    width: 32px;
+    height: 32px;
   }
 }
 </style>

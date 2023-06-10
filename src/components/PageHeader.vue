@@ -6,8 +6,8 @@
                 <span class="text-white">Cohbs</span>
             </div>
             <div class="flex">
-                <a target="_blank" :href="twitterLink"><img src="@/assets/twitter.png" class="px-4" alt="twitter_icon"></a>
-                <a target="_blank" :href="discordLink"><img src="@/assets/discord.png" class="px-4" alt="discord_icon"></a>
+                <a target="_blank" :href="twitterLink"><img src="@/assets/twitter.png" class="mx-4 icons" alt="twitter_icon"></a>
+                <a target="_blank" :href="discordLink"><img src="@/assets/discord.png" class="mx-4 icons" alt="discord_icon"></a>
             </div>
         </div>
   </div>
@@ -20,3 +20,4 @@ export default {
     name: 'PageHeader'
 }
 </script>
+
