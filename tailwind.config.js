@@ -13,6 +13,9 @@ module.exports = {
         'lg': '1024px',
         'xl': '1280px',
       }
+    },
+    minHeight: {
+      '70': '70vh',
     }
   },
   plugins: [],

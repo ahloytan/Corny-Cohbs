@@ -11,8 +11,8 @@
             </div>
         </div>
   </div>
-  <div id="intoTheCornVerse">
-        <img src="@/assets/cornverse.png" class="mx-auto" alt="into_the_cornverse">
+  <div id="intoTheCornVerse" class="min-h-70 flex items-center">
+        <img src="@/assets/cornverse.png" class="mx-auto avatar" alt="into_the_cornverse">
   </div>
 </template>
 <script>
@@ -20,4 +20,24 @@ export default {
     name: 'PageHeader'
 }
 </script>
+<style>
+.avatar {
+	box-sizing: border-box;
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(20px);
+	}
+	50% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(20px);
+	}
+}
+</style>
 

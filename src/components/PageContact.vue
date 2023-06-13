@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="bgCornyPurple text-white px-4 md:px-0">
+  <div id="contact" class="bgCornyPurple text-white px-4 md:px-0 min-h-70">
     <div class="text-center md:text-left container lg:pl-32 py-16 flex">
       <div class="md:pr-12 xl:pr-32">
         <span class="cornyYellow cheee-bingbong text-4xl md:text-7xl">Corny</span>
