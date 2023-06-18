@@ -1,59 +1,39 @@
 <template>
   <div id="storyline" class="text-center text-white bgCornyPurple degular px-4 md:px-0 min-h-70">
-    <div class="container lg:px-64 py-16">
+    <div class="container lg:px-64 py-4 md:py-16">
       <h3>Meet our hero Corny Cob and take an adventure into the Cornyverse...</h3>
       <p class="pt-4">In a rundown amusement park, Corny, a janitor with a passion for crypto trading, suffers a mundane life under the constant berating of Mr. Hardcorn, the grumpy park owner.</p>
     </div>
-    <div class="slider full-bleed">
+    <div id="carousel" class="slider full-bleed">
       <div class="slidewrapper">
-        <div class="slide">
-          Item 1
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 2
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 3
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 4
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 5
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 6
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 7
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 8
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 9
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <div class="slide">
-          Item 10
-        </div>
+        <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
     </div>
     <div class="container lg:px-64 py-16">
@@ -69,15 +49,16 @@ export default {
     name: 'StoryLine',
     components: {
         CornButton
-    }
+    },
 }
 </script>
 <style>
+/* https://codepen.io/bramus/pen/VwpwdZy */
 #storyline {
   --column-size: min(100%, 500px);
   --slider-size: min(100%, 300px);
   --slider-border-radius: 20px;
-  --slider-fullbleed-gap: 40px;
+  --slider-fullbleed-gap: 20px;
   overflow-x: hidden;
 }
 
@@ -96,6 +77,7 @@ export default {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .slider::-webkit-scrollbar {
   display: none;
 }
@@ -115,8 +97,6 @@ export default {
 }
 
 .slide {
-  background: rgb(0 0 0 / 0.1);
-  
   /* Stretch me out in my .slidewrapper parent */
   flex: 1;
   
@@ -138,7 +118,7 @@ export default {
 
 /* Put border-radius on the individual slides, not the slider-container */
 .slider.full-bleed {
-  border-radius: 0;
+  border-radius: var(--slider-border-radius);
 }
 .slider.full-bleed .slide {
   border-radius: var(--slider-border-radius);
@@ -151,7 +131,7 @@ export default {
 
 /* Offset first slidewrapper from the left so that it apppears centered on load */
 .slider.full-bleed .slidewrapper:first-child {
-  padding-left: calc(30vw - (var(--slider-size)));
+  padding-left: calc(85vw - (var(--slider-size)));
 }
 
 /* Offset last slidewrapper so that it apppears centered when at the last item */
@@ -159,6 +139,26 @@ export default {
 .slider.full-bleed .slidewrapper:last-child {
   margin-right: 0;
   padding-right: calc(50vw - (var(--slider-size) / 2));
+}
+
+
+@media (min-width: 768px) {
+  #storyline {
+    --column-size: min(100%, 500px);
+    --slider-size: min(100%, 300px);
+    --slider-border-radius: 20px;
+    --slider-fullbleed-gap: 40px;
+    overflow-x: hidden;
+  }
+
+  .slider.full-bleed .slidewrapper:first-child {
+    padding-left: calc(40vw - (var(--slider-size)));
+  }
+
+  .slider.full-bleed .slidewrapper:last-child {
+    margin-right: 0;
+    padding-right: calc(40vw - (var(--slider-size) / 2));
+  }
 }
 
 </style>

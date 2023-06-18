@@ -1,6 +1,6 @@
 <template>
     <div id="header" class="bgCornyPurple px-4 md:px-0">
-        <div class="container flex py-8 justify-between">
+        <div class="container flex py-8 justify-between items-center">
             <div class="cheee-bingbong text-3xl md:text-5xl">
                 <span class="cornyYellow">Corny</span>
                 <span class="text-white">Cohbs</span>

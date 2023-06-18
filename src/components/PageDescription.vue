@@ -1,6 +1,6 @@
 <template>
     <div id="description" class="bgCornyYellow px-4 md:px-0 min-h-70">
-        <div class="container text-center md:text-left md:px-32 py-16 lg:flex items-center">
+        <div class="container text-center md:text-left md:px-32 py-4 md:py-16 lg:flex items-center">
             <div class="lg:px-16">
                 <h1 class="cornyPurple cheee-bingbong py-8">What the shuck?</h1>
                 <div class="degular cornyBlack">

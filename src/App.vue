@@ -114,10 +114,5 @@ export default {
     width: 234px;
     height: 234px;
   }
-
-  .icons {
-    width: 32px;
-    height: 32px;
-  }
 }
 </style>

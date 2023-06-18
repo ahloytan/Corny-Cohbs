@@ -1,6 +1,6 @@
 <template>
   <div id="cornPaper" class="bgCornyLightYellow px-4 md:px-0 min-h-70">
-    <div class="container lg:flex py-16 items-center">
+    <div class="container lg:flex py-4 md:py-16 items-center">
       <img id="cornPaper" src="@/assets/cornpaper.jpg" class="mx-auto xl:mr-48" alt="corn_paper">
       <div class="text-center lg:pr-32">
         <h1 class="cornyOrange cheee-bingbong pb-8">CORNPAPER</h1>
