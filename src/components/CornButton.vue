@@ -13,5 +13,10 @@ export default {
 <style>
 .bgCornyOrange {
   background-color: #FF4F1A;
+
+  &:hover {
+    background-color: #fff;
+    color: #FF4F1A;
+  }
 }
 </style>

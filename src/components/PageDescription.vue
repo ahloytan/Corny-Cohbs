@@ -7,7 +7,7 @@
                 <p class="font-bold text-xl">Welcome to Corny Cohbs, an NFT collection of 4,000 corny characters that inhabit the Cornyverse.</p> 
                 <p class="pt-8 text-xl font-semibold">
                     Corny Cohbs is minting on the Hedera Token Service (HTS) using NFT technology that is provided on the 
-                    <a target="_blank" :href="hederaLink"><span class="font-bold underline">Hedera Network</span></a>
+                    <a target="_blank" :href="hederaLink"><span class="font-bold underline hoverState">Hedera Network</span></a>
                 </p>
                 </div>
             </div>
@@ -20,3 +20,8 @@ export default {
     name: 'PageDescription'
 }
 </script>
+<style scoped>
+.hoverState:hover{
+    color: #FF4F1A;
+}
+</style>

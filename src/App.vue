@@ -40,7 +40,8 @@ export default {
   methods: {
     goToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    },
+
   }
 }
 </script>
@@ -53,7 +54,8 @@ export default {
 #intoTheCornVerse {
   background-image: url('@/assets/cornverse-bg.jpeg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-color: #000; 
 }
 
 #cornsGIF {
@@ -63,6 +65,7 @@ export default {
 
 .max-width-350 {
   max-width: 350px;
+  margin: 0 auto;
 }
 
 .degular {
@@ -107,6 +110,10 @@ export default {
 
 .bgCornyLightYellow {
   background-color: #FFFED5;
+}
+
+.iconsHoverState:hover {
+  fill: #FCEA4D;
 }
 
 @media screen and (max-width: 768px) {

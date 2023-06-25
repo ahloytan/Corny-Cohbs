@@ -9,10 +9,10 @@
         <img class="slide" src="@/assets/frame1.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame2.jpg" alt="frame2">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame3.jpg" alt="frame3">
       </div>
       <div class="slidewrapper">
         <img class="slide" src="@/assets/frame1.png" alt="frame1">
@@ -38,17 +38,17 @@
     </div>
     <div class="container lg:px-64 py-16">
       <p>Everything changes when Corny discovers a mesmerizing crystal ball during his cleanup duties. As Corny gazes into it, he encounters a trippy corn cob figure that lures him into the depths of the Cornyverse.</p>
-      <CornButton content="ENTER THE CORNVERSE"/>
+      <!-- <CornButton content="ENTER THE CORNVERSE"/> -->
     </div>
   </div>
 </template>
 <script>
-import CornButton from './CornButton.vue';
+// import CornButton from './CornButton.vue';
 
 export default {
     name: 'StoryLine',
     components: {
-        CornButton
+        // CornButton
     },
 }
 </script>
