@@ -4,20 +4,34 @@
             <div class="lg:px-16">
                 <h1 class="cornyPurple cheee-bingbong py-8">What the shuck?</h1>
                 <div class="degular cornyBlack">
-                <p class="font-bold text-xl">Welcome to Corny Cohbs, an NFT collection of 4,000 corny characters that inhabit the Cornyverse.</p> 
+                <p class="font-bold text-xl">
+                    CornyCohbs is a fun NFT collection housing 4,000 unique corny characters that inhabit the Cornyverse. Exclusivly built on the
+                    <a target="_blank" :href="hederaLink"><span class="font-bold underline hoverState">Hedera Network</span></a>.
+                </p> 
+                <img v-if="isMobile" id="cornsGIF" src="@/assets/corns.gif" class="mx-auto" alt="corns_gif">
+
                 <p class="pt-8 text-xl font-semibold">
-                    Corny Cohbs is minting on the Hedera Token Service (HTS) using NFT technology that is provided on the 
-                    <a target="_blank" :href="hederaLink"><span class="font-bold underline hoverState">Hedera Network</span></a>
+                    In our vision we aspire to build a strong community in web3 whilst growing into a top brand that maintains high quality in everything we deliver. We also want to create an <b>emotional connection</b> for <b>EVERYONE</b> who follows CornyCohbs as well as an enjoyable & memorable experience.
                 </p>
                 </div>
             </div>
-            <img id="cornsGIF" src="@/assets/corns.gif" class="mx-auto" alt="corns_gif">
+            <img v-if="!isMobile" id="cornsGIF" src="@/assets/corns.gif" class="mx-auto" alt="corns_gif">
         </div>
     </div>
 </template>
 <script>
+import useIsMobile  from '../mixins/index';
+
+
 export default {
-    name: 'PageDescription'
+    name: 'PageDescription',
+    setup() {
+        const { isMobile } = useIsMobile();
+
+        return {
+        isMobile
+        };
+    }
 }
 </script>
 <style scoped>

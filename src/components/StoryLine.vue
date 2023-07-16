@@ -6,7 +6,7 @@
     </div>
     <div id="carousel" class="slider full-bleed">
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
       </div>
       <div class="slidewrapper">
         <img class="slide" src="@/assets/frame2.jpg" alt="frame2">
@@ -15,28 +15,33 @@
         <img class="slide" src="@/assets/frame3.jpg" alt="frame3">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame4.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame5.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.png" alt="frame1">
+        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
       </div>
     </div>
-    <div class="container lg:px-64 py-16">
+      <div class="flex justify-center">
+        <img class="cursor-pointer" src="@/assets/left.png" alt="left arrow" @click="moveCarousel('left')">
+        <img class="cursor-pointer" src="@/assets/right.png" alt="right arrow" @click="moveCarousel('right')">
+      </div>
+
+      <div class="container lg:px-64 py-16">
       <p>Everything changes when Corny discovers a mesmerizing crystal ball during his cleanup duties. As Corny gazes into it, he encounters a trippy corn cob figure that lures him into the depths of the Cornyverse.</p>
       <!-- <CornButton content="ENTER THE CORNVERSE"/> -->
     </div>
@@ -49,7 +54,17 @@ export default {
     name: 'StoryLine',
     components: {
         // CornButton
-    },
+    }, 
+    methods: {
+    moveCarousel(direction) {
+      const carousel = document.getElementById('carousel');
+      const scrollAmount = direction === 'left' ? -carousel.offsetWidth / 5 : carousel.offsetWidth / 5;
+      carousel.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  }
 }
 </script>
 <style>

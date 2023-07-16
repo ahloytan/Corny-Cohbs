@@ -39,17 +39,21 @@
 </template>
 <script>
 import CornButton from './CornButton.vue';
+import useIsMobile  from '../mixins/index';
+
 
 export default {
-    name: 'PageContact',
-    components: {
-        CornButton
-    },
-    computed: {
-      isMobile(){
-        return window.innerWidth <= 420;
-      }
-    }
+  name: 'PageContact',
+  components: {
+      CornButton
+  },
+  setup() {
+    const { isMobile } = useIsMobile();
+
+    return {
+      isMobile
+    };
+  }
 }
 </script>
 <style>
