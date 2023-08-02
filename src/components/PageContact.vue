@@ -1,6 +1,6 @@
 <template>
   <div id="contact" class="bgCornyPurple text-white px-4 md:px-0 py-4">
-    <div v-if="isMobile" class="text-center">
+    <div v-if="isMobile" class="text-center mb-4">
       <span class="cornyYellow cheee-bingbong text-6xl md:text-7xl">Corny</span>
       <span class="text-white cheee-bingbong text-6xl md:text-7xl">Cohbs</span>
     </div>

@@ -41,7 +41,7 @@
     </nav>
   </div>
   <div id="intoTheCornVerse" class="flex items-center min-h-70">
-        <img src="@/assets/cornverse.png" class="mx-auto avatar" alt="into_the_cornverse">
+        <img src="@/assets/cornverse.png" class="mx-auto avatar max-w-2xl xl:max-w-none" alt="into_the_cornverse">
   </div>
 </template>
 <script>
@@ -56,6 +56,13 @@ export default {
 }
 </script>
 <style scoped>
+#intoTheCornVerse {
+  background-image: url('@/assets/cornverse-bg.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000; 
+}
+
 .avatar {
 	box-sizing: border-box;
 	overflow: hidden;

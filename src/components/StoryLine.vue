@@ -21,19 +21,10 @@
         <img class="slide" src="@/assets/frame5.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
+        <img class="slide" src="@/assets/frame6.png" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
-      </div>
-      <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
-      </div>
-      <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
-      </div>
-      <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
+        <img class="slide" src="@/assets/frame7.png" alt="frame1">
       </div>
     </div>
       <div class="flex justify-center">

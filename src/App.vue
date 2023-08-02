@@ -51,18 +51,6 @@ export default {
   font-size: 1.6rem;
 }
 
-#intoTheCornVerse {
-  background-image: url('@/assets/cornverse-bg.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000; 
-}
-
-#cornsGIF {
-  width: 468px;
-  height: 468px;
-}
-
 .max-width-350 {
   max-width: 350px;
   margin: 0 auto;
@@ -114,12 +102,5 @@ export default {
 
 .iconsHoverState:hover {
   fill: #FCEA4D;
-}
-
-@media screen and (max-width: 768px) {
-  #cornsGIF {
-    width: 234px;
-    height: 234px;
-  }
 }
 </style>
