@@ -1,8 +1,8 @@
 <template>
   <div id="storyline" class="text-center text-white bgCornyPurple degular px-4 md:px-0 min-h-70">
     <div class="container lg:px-64 py-4 md:py-16">
-      <h3>Meet our hero Corny Cob and take an adventure into the Cornyverse...</h3>
-      <p class="pt-4">In a rundown amusement park, Corny, a janitor with a passion for crypto trading, suffers a mundane life under the constant berating of Mr. Hardcorn, the grumpy park owner.</p>
+      <h3>Meet Corny & join him on an epic adventure into the Cornyverse!</h3>
+      <p class="pt-4">In a rundown amusement park, Corny suffers a mundane life as a janitor, sweeping floors whilst being bossed around by the grumpy park owner, Mr Hardcorn.</p>
     </div>
     <div id="carousel" class="slider full-bleed">
       <div class="slidewrapper">
@@ -33,7 +33,7 @@
       </div>
 
       <div class="container lg:px-64 py-16">
-      <p>Everything changes when Corny discovers a mesmerizing crystal ball during his cleanup duties. As Corny gazes into it, he encounters a trippy corn cob figure that lures him into the depths of the Cornyverse.</p>
+      <p>Everything suddenly changes when Corny interacts with a mesmerising crystal ball & enters a new dimension during his cleanup duties.</p>
       <!-- <CornButton content="ENTER THE CORNVERSE"/> -->
     </div>
   </div>
