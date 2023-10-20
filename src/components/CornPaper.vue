@@ -16,11 +16,19 @@
 </template>
 <script>
 import CornButton from './CornButton.vue';
+import useIsMobile  from '../mixins/index';
 
 export default {
     name: 'CornPaper',
     components: {
         CornButton
-    }
+    },
+    setup() {
+    const { isMobile } = useIsMobile();
+
+    return {
+      isMobile
+    };
+  }
 }
 </script>
