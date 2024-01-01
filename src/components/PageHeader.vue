@@ -44,7 +44,7 @@
     </nav>
   </div>
   <div id="intoTheCornVerse" class="flex items-center min-h-70">
-        <img src="@/assets/cornverse.jpg" class="mx-auto avatar max-w-2xl xl:max-w-none" alt="into_the_cornverse">
+        <img src="@/assets/cornverse.webp" class="mx-auto avatar max-w-2xl xl:max-w-none" alt="into_the_cornverse">
   </div>
 </template>
 <script>

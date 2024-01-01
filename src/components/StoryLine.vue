@@ -6,30 +6,30 @@
     </div>
     <div id="carousel" class="slider full-bleed">
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame1.jpg" alt="frame1">
+        <img class="slide" src="@/assets/frame1.webp" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame2.jpg" alt="frame2">
+        <img class="slide" src="@/assets/frame2.webp" alt="frame2">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame3.jpg" alt="frame3">
+        <img class="slide" src="@/assets/frame3.webp" alt="frame3">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame4.png" alt="frame1">
+        <img class="slide" src="@/assets/frame4.webp" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame5.png" alt="frame1">
+        <img class="slide" src="@/assets/frame5.webp" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame6.png" alt="frame1">
+        <img class="slide" src="@/assets/frame6.webp" alt="frame1">
       </div>
       <div class="slidewrapper">
-        <img class="slide" src="@/assets/frame7.png" alt="frame1">
+        <img class="slide" src="@/assets/frame7.webp" alt="frame1">
       </div>
     </div>
       <div class="flex justify-center">
-        <img class="cursor-pointer" src="@/assets/left.png" alt="left arrow" @click="moveCarousel('left')">
-        <img class="cursor-pointer" src="@/assets/right.png" alt="right arrow" @click="moveCarousel('right')">
+        <img class="cursor-pointer" src="@/assets/left.webp" alt="left arrow" @click="moveCarousel('left')">
+        <img class="cursor-pointer" src="@/assets/right.webp" alt="right arrow" @click="moveCarousel('right')">
       </div>
 
       <div class="container lg:px-64 py-16">

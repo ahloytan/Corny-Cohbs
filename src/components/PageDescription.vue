@@ -14,7 +14,7 @@
                     In our vision we aspire to build a strong community in web3 whilst growing into a top brand that maintains high quality in everything we deliver. We also want to create an <b>emotional connection</b> for <b>EVERYONE</b> who follows CornyCohbs as well as an enjoyable & memorable experience.
                 </p>
                 </div>
-                <img src="@/assets/stickers-set1.png" class="mx-auto px-0 sm:px-16 md:0 lg:px-32" alt="stickers-set1">
+                <img src="@/assets/stickers-set1.webp" class="mx-auto px-0 sm:px-16 md:0 lg:px-32" alt="stickers-set1">
             </div>
             <div class="col-span-12 md:col-span-6 lg:col-span-5 h-full">
                 <img v-if="!isMobile" src="@/assets/corns.gif" class="mx-auto object-scale-down" alt="corns_gif">
